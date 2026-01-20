@@ -98,7 +98,7 @@ h3 {
 }
 
 /* CODE BLOCK */
-pre {
+pre.card {
     background: #000;
     border: 1px solid #111;
     padding: 30px;
