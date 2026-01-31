@@ -5,27 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LAYN - The Only Right Way</title>
         <link rel="stylesheet" href="src/style.css" />
-        <link id="icon" rel="shortcut icon" href="src/line.png">
+        <link id="icon" rel="shortcut icon" href="src/img/line.png">
+        <script src="src/loader.js"></script>
     </head>
     <body>
-        <!-- LOADER -->
-        <div id="loader">
-            <div class="layn-pyramid loading">
-                <div class="row top">
-                    <span>|</span>
-                </div>
-                <div class="row middle">
-                    <span>/</span>
-                    <span>\</span>
-                </div>
-                <div class="row bottom">
-                    <span>-</span>
-                    <span>-</span>
-                    <span>-</span>
-                </div>
-            </div>
-            <div class="loading-text">STAY ON THE LAYN</div>
-        </div>
 
         <!-- HERO -->
         <div class="hero">
@@ -133,20 +116,16 @@ Only in how hungry you are for knowledge.
             The Only Right Way
         </footer>
         <script>
-            window.addEventListener("load", () => {
-                document.body.classList.add("loaded");
-            });
-
             let x = 0;
 
             const isMobile = window.matchMedia("(pointer: coarse)").matches;
 
             if (!isMobile) {
                 const icons = [
-                    "src/reverse.png",
-                    "src/vertical.png",
-                    "src/line.png",
-                    "src/horizontal.png"
+                    "src/img/reverse.png",
+                    "src/img/vertical.png",
+                    "src/img/line.png",
+                    "src/img/horizontal.png"
                 ];
 
                 let index = 0;
